@@ -9,23 +9,21 @@ Content-Type: application/json
   "title": "Test title",
   "author": "Test author",
   "description": "test description",
-  "language": "test language"
+  "language": "test language",
+  "image": "https://i.redd.it/jeuusd992wd41.jpg"
 }
 
 ### Books Show
-GET http://localhost:3000/books/2.json 
+GET http://localhost:3000/books/6.json 
 Content-Type: application/json
 
 ### Books Update 
-PATCH http://localhost:3000/books/4.json
+PATCH http://localhost:3000/books/7.json
 Content-Type: application/json
 
 {
-  "title": "Thirteen Moons",
-  "author": "Charles Frazier",
-  "description": "Thirteen Moons (2006), a historical novel by Charles Frazier, tells the story of an orphan who finds love and acceptance with the Cherokee people after he is sent on a journey through their territory. It is roughly based on a Confederate Army officer who is the only white man to ever serve as an Indian Chief.",
-  "language": "English"
+  "title": "Test title!!!!!"
 }
 
 ### Books Destroy
-DELETE http://localhost:3000/books/5.json 
+DELETE http://localhost:3000/books/6.json 

@@ -10,7 +10,8 @@ class BooksController < ApplicationController
       title: params[:title],
       author: params[:author],
       description: params[:description],
-      language: params[:language]
+      language: params[:language],
+      image: params[:image]
     )
 
     if book.save
@@ -31,6 +32,7 @@ class BooksController < ApplicationController
     book.author = params[:author] || book.author
     book.description = params[:description] || book.description
     book.language = params[:language] || book.language
+    book.image = params[:image] || book.image
     book.save
     render json: book.as_json
   end
